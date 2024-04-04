@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  dev-env:
+    build: .
+    volumes:
+      - dev_home:/home/dev
+    stdin_open: true
+    tty: true
+
+volumes:
+  dev_home:
+    driver: local
